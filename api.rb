@@ -28,7 +28,11 @@ module ConfAsk
       
       post do
         authenticate!
-        Question.create(:text => params[:text], :screen_name => current_user.screen_name)
+        if question = Question.create(:text => params[:text], :screen_name => current_user.screen_name)
+          question
+        else
+          error! "Unable to create your question.", 403
+        end
       end
       
       helpers do

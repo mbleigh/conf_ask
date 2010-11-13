@@ -35,7 +35,7 @@ $(function() {
     $.ajax({
       type:'POST',
       url:'/api/v1/questions',
-      data:$('form#ask').serialize(),
+      data:{text:$('input[name=text]').val()},
       dataType:'json',
       success:function(data) {
         $(document).trigger('questions:reload');
