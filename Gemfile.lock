@@ -1,0 +1,66 @@
+PATH
+  remote: /Users/mbleigh/gems/grape
+  specs:
+    grape (0.0.0.beta.1)
+      multi_json
+      multi_xml
+      rack
+      rack-jsonp
+      rack-mount
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.1)
+    addressable (2.2.2)
+    bson (1.1.2)
+    bson_ext (1.1.2)
+    faraday (0.4.6)
+      addressable (>= 2.1.1)
+      rack (>= 1.0.1)
+    i18n (0.4.1)
+    jnunemaker-validatable (1.8.4)
+      activesupport (>= 2.3.4)
+    mongo (1.1.2)
+      bson (>= 1.1.1)
+    mongo_mapper (0.8.6)
+      activesupport (>= 2.3.4)
+      jnunemaker-validatable (~> 1.8.4)
+      plucky (~> 0.3.6)
+    multi_json (0.0.5)
+    multi_xml (0.2.0)
+    nokogiri (1.4.3.1)
+    oa-core (0.1.4)
+      rack (~> 1.1)
+    oa-oauth (0.1.4)
+      multi_json (~> 0.0.2)
+      nokogiri (~> 1.4.2)
+      oa-core (= 0.1.4)
+      oauth (~> 0.4.0)
+      oauth2 (~> 0.0.10)
+    oauth (0.4.3)
+    oauth2 (0.0.13)
+      faraday (~> 0.4.1)
+      multi_json (>= 0.0.4)
+    plucky (0.3.6)
+      mongo (~> 1.1)
+    rack (1.2.1)
+    rack-jsonp (1.1.0)
+      rack
+    rack-mount (0.6.13)
+      rack (>= 1.0.0)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
+    tilt (1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bson_ext
+  grape (= 0.0.0.beta.1)!
+  i18n
+  mongo_mapper
+  oa-oauth
+  sinatra

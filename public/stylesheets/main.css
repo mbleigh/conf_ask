@@ -1,0 +1,116 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#login {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 6px 9px;
+}
+
+#login img {
+  vertical-align: middle;
+}
+
+#login a {
+  color: #ccc;
+  font-size: 12px;
+}
+
+#login b {
+  margin-right: 10px;
+}
+
+h1#top {
+  background: #220066;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding: 60px 0 30px;
+  margin: 0;
+}
+
+h1#top em {
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+}
+
+#ask { 
+  width: 920px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #eee;
+}
+
+#ask input {
+  font-size: 22px;
+  padding: 8px 12px;
+  width: 800px;
+}
+
+#ask button {
+  background: #220066;
+  color: white;
+  border: 0;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 14px;
+}
+
+#questions {
+  margin: 0 auto;
+  width: 960px;
+}
+
+a#sign_in {
+  display: block;
+  width: 920px;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto;
+  background: #eee;
+  color: #220066;
+}
+
+a#sign_in:hover {
+  background: #f5f5f5;
+}
+
+#question_list {
+  margin: 20px 0 50px;
+  padding: 0;
+}
+
+#question_list li {
+  height: 48px;
+  line-height: 48px;
+  padding: 10px;
+  font-size: 18px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  list-style: none;
+}
+
+#question_list img {
+  float: left;
+  margin-right: 10px;
+}
+
+#loading {
+  background: #227700;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  position: fixed;
+  left: 45%;
+  width: 10%;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}

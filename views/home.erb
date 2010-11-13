@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ConfAsk - Get Your Conference Questions Answered</title>
+    <script src="/javascripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery.quicksand.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css"/>
+  </head>
+  <body>
+    <aside id='loading' style='display:none;'>Loading...</aside>
+    
+    <aside id='login'>
+      <% if current_user %>
+        <img src='http://img.tweetimag.es/i/<%= current_user.screen_name %>_m'/> <b><%= current_user.screen_name %></b> <a href='/sign_out'>Sign Out</a>
+      <% else %>
+        <a href='/auth/twitter'>Sign In with Twitter</a>
+      <% end %>
+    </aside>
+    <h1 id='top'>Questions about <em>Grape</em></h1>
+    
+    <% if current_user %>
+    <form id='ask' method='post' action='/api/v1/questions'>
+      <input type='text' name='text' placeholder='What is your question?'/>
+      <button type='submit'>Ask</button>
+    </form>
+    <% else %>
+    <a id='sign_in' href='/auth/twitter'>Sign in to ask a question.</a>
+    <% end %>
+    
+    <section id='questions'>
+      <ul id='question_list'>
+        
+      </ul>
+    </section>
+  </body>
+</html>
