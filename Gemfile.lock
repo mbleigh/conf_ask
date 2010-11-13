@@ -1,13 +1,14 @@
 GIT
   remote: git://github.com/intridea/grape.git
-  revision: 98ca5a8458e3a54e538c0db7cc65d88f120e1bb4
+  revision: 6bcb12db8c1a579861d97b9837875e08a3e10733
   specs:
-    grape (0.0.0.beta.1)
+    grape (0.1.0)
+      json
       multi_json
       multi_xml
       rack
       rack-jsonp
-      rack-mount
+      rack-mount (~> 0.6.13)
 
 GEM
   remote: http://rubygems.org/
@@ -22,6 +23,7 @@ GEM
     i18n (0.4.1)
     jnunemaker-validatable (1.8.4)
       activesupport (>= 2.3.4)
+    json (1.4.6)
     mongo (1.1.2)
       bson (>= 1.1.1)
     mongo_mapper (0.8.6)
@@ -60,7 +62,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
-  grape (= 0.0.0.beta.1)!
+  grape (= 0.1.0)!
   i18n
   mongo_mapper
   oa-oauth
