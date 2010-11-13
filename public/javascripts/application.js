@@ -15,7 +15,7 @@ $(function() {
       success:function(data) {
         var build = $('<ul/>')
         $.each(data, function() {
-          build.append("<li data-id='" + this.id + "'><img class='avatar' src='http://img.tweetimag.es/i/" + this.screen_name + "_n'/> " + this.text + "</li>");
+          build.append("<li data-id='" + this.id + "'><img class='avatar' src='http://img.tweetimag.es/i/" + this.screen_name + "_n'/> <b>@" + this.screen_name + ":</b> " + this.text + "</li>");
         });
         
         $('#question_list').html(build.html());
