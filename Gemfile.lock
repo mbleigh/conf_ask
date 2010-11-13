@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/mbleigh/gems/grape
+GIT
+  remote: git://github.com/intridea/grape.git
+  revision: 98ca5a8458e3a54e538c0db7cc65d88f120e1bb4
   specs:
     grape (0.0.0.beta.1)
       multi_json
