@@ -9,6 +9,7 @@ end
 
 require 'omniauth/oauth'
 
+use Rack::Static, :urls => ["/stylesheets", "/images", "/javascripts"], :root => "public"
 use Rack::Session::Cookie
 use OmniAuth::Strategies::Twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
 
