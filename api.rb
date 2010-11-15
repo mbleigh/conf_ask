@@ -22,7 +22,6 @@ module ConfAsk
     
     resources :questions do
       get do
-        current_user
         Question.sort([['$natural', -1]]).all
       end
       
